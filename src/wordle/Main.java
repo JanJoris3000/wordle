@@ -16,16 +16,18 @@ public class Main {
 		char letter5 = 'l';
 
 		for (int i = 0; i < 10; i++) {
-
+			
 			char poging1 = scanner.next().charAt(0);
 			char poging2 = scanner.next().charAt(0);
 			char poging3 = scanner.next().charAt(0);
 			char poging4 = scanner.next().charAt(0);
 			char poging5 = scanner.next().charAt(0);
-
+			if (poging1 == letter1 && poging2 == letter2 && poging3 == letter3 && poging4 == letter4 && poging5 == letter5)i = 10;
+			
+			
 			if (poging1 == letter1) {
 				System.out.println("goed");
-			} else if (poging1 == letter2 || poging1 == letter3 || poging1 == letter4 || poging1 == letter5) {
+			}else if (poging1 == letter2 || poging1 == letter3 || poging1 == letter4 || poging1 == letter5) {
 				System.out.println("fout");
 			} else {
 				System.out.println("fout");
@@ -44,6 +46,7 @@ public class Main {
 			} else {
 				System.out.println("fout");
 			}
+			
 			if (poging4 == letter4) {
 				System.out.println("goed");
 			} else if (poging4 == letter2 || poging4 == letter3 || poging4 == letter1 || poging4 == letter5) {
@@ -57,6 +60,9 @@ public class Main {
 				System.out.println("fout");
 			} else {
 				System.out.println("fout");
+			}
+			if (poging1 == letter1 && poging2 == letter2 && poging3 == letter3 && poging4 == letter4 && poging5 == letter5) {
+				System.out.println("je hebt gewonnen!");
 			}
 
 		}
